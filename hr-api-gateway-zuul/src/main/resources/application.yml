@@ -7,11 +7,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: workerModule
+        - id: hr-worker
           uri: http://localhost:8001/
           predicates:
             - Path=/workers/**
-        - id: payrollModule
+        - id: hr-payroll
           uri: http://localhost:8101/
           predicates:
             - Path=/payments/**
