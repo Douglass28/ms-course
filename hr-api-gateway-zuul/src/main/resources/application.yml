@@ -10,9 +10,13 @@ spring:
         - id: hr-worker
           uri: http://localhost:8001/
           predicates:
-            - Path=/workers/**
+            - Path=hr-worker/workers/**
         - id: hr-payroll
           uri: http://localhost:8101/
           predicates:
-            - Path=/payments/**
+            - Path=hr-payroll/payments/**
+        - id: hr-user
+          uri: http://localhost:8102/
+          predicates:
+            - Path=hr-user/users/**
 
