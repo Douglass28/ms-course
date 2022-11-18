@@ -19,4 +19,8 @@ spring:
           uri: http://localhost:8102/
           predicates:
             - Path=hr-user/users/**
+        - id : hr-oauth
+          uri: http://localhost:8002/
+          predicates:
+            - Path=hr-oauth/users/**
 
