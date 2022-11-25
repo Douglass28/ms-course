@@ -15,7 +15,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
 @EnableWebSecurity
 @Configuration
-public class AppConfig extends WebSecurityConfigurerAdapter{
+public class AppConfig {
 
 
     @Bean
