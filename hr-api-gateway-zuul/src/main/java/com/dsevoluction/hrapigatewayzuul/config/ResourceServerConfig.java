@@ -19,7 +19,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     private static final String[] PUBLIC = {"/hr-oauth/oauth/token"};
     private static final String[] OPERATOR = {"/hr-worker/**"};
-    private static final String[] ADMIN = {"/hr-payroll/**", "/hr-worker/**"};
+    private static final String[] ADMIN = {"/hr-payroll/**", "/hr-worker/**", "/actuator/**",
+            "/hr-worker/actuator/**", "/hr-oauth/actuator/**" };
 
     // fazendo a leitura de token gerado
     @Override

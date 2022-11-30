@@ -28,8 +28,8 @@ public class WorkerResource {
     @Autowired
     private WorkerRepository repository;
 
-    @Value("${test.config}")
-    private String textConfig;
+    //@Value("${test.config}")
+    //private String textConfig;
 
     @GetMapping
     public ResponseEntity<List<Worker>> findAll(){
@@ -39,7 +39,6 @@ public class WorkerResource {
 
     @GetMapping(value = "/configs")
     public ResponseEntity<Void> getConfigs() {
-        logger.info("CONFIG : " + textConfig);
         return ResponseEntity.noContent().build();
     }
 
